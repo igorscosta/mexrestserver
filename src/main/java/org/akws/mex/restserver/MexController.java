@@ -1,4 +1,4 @@
-package org.akws.mex;
+package org.akws.mex.restserver;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -23,6 +23,8 @@ import java.io.InputStreamReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+
+import org.akws.mex.log4mex.*;
 
 /**
  * Created by igorcosta on 12/04/16.

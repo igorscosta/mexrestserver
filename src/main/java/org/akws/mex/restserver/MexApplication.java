@@ -1,4 +1,4 @@
-package org.akws.mex;
+package org.akws.mex.restserver;
 
 import javax.ws.rs.ApplicationPath;
 
