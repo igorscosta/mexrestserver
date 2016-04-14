@@ -1,4 +1,4 @@
-package org.akws.mex.restserver;
+package org.aksw.mex.restserver;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

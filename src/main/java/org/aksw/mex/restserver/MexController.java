@@ -1,4 +1,4 @@
-package org.akws.mex.restserver;
+package org.aksw.mex.restserver;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -24,7 +24,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.akws.mex.log4mex.*;
+import org.aksw.mex.log4mex.MyMEXVO;
+import org.aksw.mex.log4mex.MEXSerializer;
 
 /**
  * Created by igorcosta on 12/04/16.
@@ -44,13 +45,19 @@ public class MexController {
     @Path("/setauthorname")
     @POST
     @Consumes("application/json")
-    public String setAuthorName(String content) throws ParseException {
+    public String setAuthorName(String content) throws Exception {
+        MyMEXVO mex = new MyMEXVO();
+
         JSONParser parser = new JSONParser();
         String stringToParse = content;
         Object obj = parser.parse(stringToParse);
         JSONObject jsonObject = (JSONObject) obj;
         String authorName = (String) jsonObject.get("Author");
         System.out.println("Nome do autor:" + authorName);
+
+        mex.setAuthorName(authorName);
+        MEXSerializer.getInstance().parse(mex);
+        MEXSerializer.getInstance().saveToDisk("/Users/igorcosta/Downloads/experiment.ttl","",mex);
         //return Response.status(201);
         return "Author: " + authorName;
 

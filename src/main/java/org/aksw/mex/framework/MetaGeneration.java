@@ -1,7 +1,7 @@
 package org.aksw.mex.framework;
 
 
-import examples.framework.WekaExample001;
+//import examples.framework.WekaExample001;
 import org.aksw.mex.framework.annotations.InterfaceVersion;
 import org.aksw.mex.framework.annotations.Start;
 import org.aksw.mex.framework.annotations.algo.Algorithm;
@@ -84,8 +84,8 @@ public class MetaGeneration {
 
         try{
 
-            //Class<?> klass = Class.forName(uc);
-            Class<?> klass = WekaExample001.class;
+            Class<?> klass = Class.forName(uc);
+            //Class<?> klass = WekaExample001.class;
             Object ins = klass.newInstance();
 
             //String outputPath = "/Users/dnes/github/mexproject/metafiles/framework/";

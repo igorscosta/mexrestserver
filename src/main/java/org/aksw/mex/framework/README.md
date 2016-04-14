@@ -44,8 +44,8 @@ public class Foo{
 ```
 #### Then, just benefit from the automatic metadata generation process
 ```java
-java -cp /home/user/mexframework org.aksw.mex.framework.MetaGeneration -uc IrisWekaExample.java -out mymex01.ttl
-java -cp /home/user/mexframework org.aksw.mex.framework.MetaGeneration -uc IrisJSATExample.java -out mymex02.ttl
+java -cp /home/user/mexframework MetaGeneration -uc IrisWekaExample.java -out mymex01.ttl
+java -cp /home/user/mexframework MetaGeneration -uc IrisJSATExample.java -out mymex02.ttl
 ```
 Now you can compare the performance of *Weka* and *JSAT* libs at once! No extra work is needed...
 

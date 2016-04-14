@@ -27,7 +27,7 @@ public class MEXAlgorithmBO {
             //_algorithmParameters = new AlgorithmParameterCollectionVO();
             _implementations = new ArrayList<ImplementationVO>();
 
-            //is = new URL(org.aksw.mex.util.MEXConstant.MEX_ALGO_URL).openStream();
+            //is = new URL(MEXConstant.MEX_ALGO_URL).openStream();
             is = new FileInputStream("/home/esteves/Desktop/mex-algo1.0.ttl");
 
             _model.read(is,null, MEXConstant.FILE_FORMAT);
