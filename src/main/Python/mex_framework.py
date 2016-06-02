@@ -1,27 +1,23 @@
+# -*- coding: UTF-8 -*-
+
+
 import requests
 import json
-from datetime import date
 
-base_url = 'http://localhost:8080/MexRestServer/resources/experiment/'
-id = '1'
-title = 'Python Test Experiment'
-description = 'test'
-email = 'costa@ime.eb.br'
-author_name = "Igor Costa"
-date = date.today()
-context = 'test'
+def experiment_info(set_experiment_info):
+    def get_experiment_info(*args, **kwargs):
+        params = set_experiment_info()
+        json_params = json.dumps(params, indent=2)
+        print json_params
+        requests.post('http://localhost:8080/MexRestServer/resources/experiment/setexperimentinfo',json = params)
+        return set_experiment_info(*args, **kwargs)
+    return get_experiment_info
 
-
-def set_experiment_info():
-    payload = {
-        "id": id,
-        "title": title,
-        "description": description,
-        "email": email,
-        "author": author_name,
-        #"date": date,
-        "context": context
-    }
-    request = requests.post(base_url + "setexperimentinfo", data=json.dumps(payload))
-
-set_experiment_info()
+def hardware(set_hardware_info):
+    def get_hardware_info(*args, **kwargs):
+        params = set_hardware_info()
+        json_params = json.dumps(params, indent=2)
+        print json_params
+        requests.post('http://localhost:8080/MexRestServer/resources/experiment/sethardware',json = params)
+        return set_hardware_info(*args, **kwargs)
+    return get_hardware_info()

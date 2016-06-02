@@ -1,0 +1,94 @@
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the process: MetaGeneration -uc /Users/igorcosta/mexrestserver/src/main/java/examples/framework/WekaExample001.java -out WekaExemple001.ttl
+[main] ERROR org.aksw.mex.framework.MetaGeneration  - java.lang.ClassNotFoundException: /Users/igorcosta/mexrestserver/src/main/java/examples/framework/WekaExample001.java
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the process: MetaGeneration -uc /Users/igorcosta/mexrestserver/src/main/java/examples/framework/WekaExample001.java -out WekaExemple001.ttl
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ********************** MEX Framework **********************
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                     http://mex.aksw.org                    
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the meta annotation for class named: WekaExample001
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @ExperimentInfo - OK
+[main] ERROR org.aksw.mex.framework.MetaGeneration  - Unexpected character (W) at position 8.
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the process: MetaGeneration -uc /Users/igorcosta/mexrestserver/src/main/java/examples/framework/WekaExample001.java -out WekaExemple001.ttl
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ********************** MEX Framework **********************
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                     http://mex.aksw.org                    
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the meta annotation for class named: WekaExample001
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @ExperimentInfo - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @Hardware - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @SamplingMethod - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - invoking the main method: start
+[main] INFO  examples.framework.WekaExample001  - Accuracy of J48: 94,00% - Error: 6,00%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of PART: 90,67% - Error: 9,33%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of DecisionTable: 92,67% - Error: 7,33%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of DecisionStump: 36,67% - Error: 63,33%
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - invoking the features method: getFeatures
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -  -> missing annotation @TestDataSet, please see http://mex.aksw.org/framework/doc for more information
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -  -> missing annotation @FinalDataSet, please see http://mex.aksw.org/framework/doc for more information
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @DataSet - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @Algorithm - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 1 : 6.0
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 1 : 94.0
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 2 : 9.333333333333329
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 2 : 90.66666666666667
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 3 : 7.333333333333329
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 3 : 92.66666666666667
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 4 : 63.333333333333336
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 4 : 36.666666666666664
+[main] ERROR org.aksw.mex.framework.MetaGeneration  - java.lang.Exception: [APPLICATION_CONTEXT]: missing the author name!
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the process: MetaGeneration -uc /Users/igorcosta/mexrestserver/src/main/java/examples/framework/WekaExample001.java -out WekaExemple001.ttl
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ********************** MEX Framework **********************
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                     http://mex.aksw.org                    
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the meta annotation for class named: WekaExample001
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @ExperimentInfo - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @Hardware - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @SamplingMethod - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - invoking the main method: start
+[main] INFO  examples.framework.WekaExample001  - Accuracy of J48: 94,00% - Error: 6,00%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of PART: 90,67% - Error: 9,33%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of DecisionTable: 92,67% - Error: 7,33%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of DecisionStump: 36,67% - Error: 63,33%
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - invoking the features method: getFeatures
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -  -> missing annotation @TestDataSet, please see http://mex.aksw.org/framework/doc for more information
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -  -> missing annotation @FinalDataSet, please see http://mex.aksw.org/framework/doc for more information
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @DataSet - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @Algorithm - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 1 : 6.0
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 1 : 94.0
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 2 : 9.333333333333329
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 2 : 90.66666666666667
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 3 : 7.333333333333329
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 3 : 92.66666666666667
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 4 : 63.333333333333336
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 4 : 36.666666666666664
+[main] ERROR org.aksw.mex.framework.MetaGeneration  - java.lang.Exception: [APPLICATION_CONTEXT]: missing the author name!
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the process: MetaGeneration -uc /Users/igorcosta/mexrestserver/src/main/java/examples/framework/WekaExample001.java -out WekaExemple001.ttl
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ********************** MEX Framework **********************
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                     http://mex.aksw.org                    
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -                                                            
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - Starting the meta annotation for class named: WekaExample001
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @ExperimentInfo - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @Hardware - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @SamplingMethod - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - invoking the main method: start
+[main] INFO  examples.framework.WekaExample001  - Accuracy of J48: 94,00% - Error: 6,00%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of PART: 90,67% - Error: 9,33%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of DecisionTable: 92,67% - Error: 7,33%
+[main] INFO  examples.framework.WekaExample001  - Accuracy of DecisionStump: 36,67% - Error: 63,33%
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - invoking the features method: getFeatures
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -  -> missing annotation @TestDataSet, please see http://mex.aksw.org/framework/doc for more information
+[main] INFO  org.aksw.mex.framework.MetaGeneration  -  -> missing annotation @FinalDataSet, please see http://mex.aksw.org/framework/doc for more information
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @DataSet - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - @Algorithm - OK
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 1 : 6.0
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 1 : 94.0
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 2 : 9.333333333333329
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 2 : 90.66666666666667
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 3 : 7.333333333333329
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 3 : 92.66666666666667
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ERROR of Execution 4 : 63.333333333333336
+[main] INFO  org.aksw.mex.framework.MetaGeneration  - ACCURACY of Execution 4 : 36.666666666666664
+[main] ERROR org.aksw.mex.framework.MetaGeneration  - java.lang.Exception: [APPLICATION_CONTEXT]: missing the author name!

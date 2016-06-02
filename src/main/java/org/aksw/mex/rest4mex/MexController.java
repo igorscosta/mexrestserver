@@ -60,7 +60,7 @@ public class MexController {
     @Path("/setexperimentinfo")
     @POST
     @Consumes("application/json")
-    public String setExperomentInfo(String content) throws Exception {
+    public String setExperimentInfo(String content) throws Exception {
 
         JSONParser parser = new JSONParser();
         String stringToParse = content;
@@ -93,9 +93,53 @@ public class MexController {
 
 
         MEXSerializer.getInstance().parse(mex);
-        MEXSerializer.getInstance().saveToDisk("/Users/igorcosta/Downloads/experiment.ttl","",mex);
+        MEXSerializer.getInstance().saveToDisk("/Users/igorcosta/Downloads/experiment_1.ttl","",mex);
         //return Response.status(201);
         return "id: " + experimentId;
+
+    }
+
+    @Path("/sethardware")
+    @POST
+    @Consumes("application/json")
+    public String setHardwareInfo(String content) throws Exception {
+
+        JSONParser parser = new JSONParser();
+        String stringToParse = content;
+        Object obj = parser.parse(stringToParse);
+        JSONObject jsonObject = (JSONObject) obj;
+
+        String cpu = (String) jsonObject.get("cpu");
+        String memory = (String) jsonObject.get("memory");
+        String hd = (String) jsonObject.get("hd");
+        String cache = (String) jsonObject.get("cpu");
+        String os = (String) jsonObject.get("memory");
+        String video = (String) jsonObject.get("hd");
+
+        System.out.println("cpu:" + cpu);
+        System.out.println("memory:" + memory);
+        System.out.println("hd:" + hd);
+        System.out.println("cache:" + cache);
+        System.out.println("os:" + os);
+        System.out.println("video:" + video);
+
+
+        HardwareConfigurationVO h = new HardwareConfigurationVO();
+        h.setCPU(cpu);
+        h.setCache(cache);
+        h.setHD(hd);
+        h.setMemory(memory);
+        h.setOperationalSystem(os);
+        h.setVideoGraph(video);
+
+        mex.Configuration().setHardwareConfiguration(h);
+
+
+
+        MEXSerializer.getInstance().parse(mex);
+        MEXSerializer.getInstance().saveToDisk("/Users/igorcosta/Downloads/experiment_1.ttl","",mex);
+        //return Response.status(201);
+        return "os: " + os;
 
     }
 }

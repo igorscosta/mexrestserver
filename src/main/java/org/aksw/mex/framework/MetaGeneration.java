@@ -1,7 +1,7 @@
 package org.aksw.mex.framework;
 
 
-//import examples.framework.WekaExample001;
+import examples.framework.WekaExample001;
 import org.aksw.mex.framework.annotations.InterfaceVersion;
 import org.aksw.mex.framework.annotations.Start;
 import org.aksw.mex.framework.annotations.algo.Algorithm;
@@ -20,6 +20,11 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.*;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import org.aksw.mex.rest4mex.MexController;
 
 /**
  * Created by dnes on 13/12/15.
@@ -84,8 +89,8 @@ public class MetaGeneration {
 
         try{
 
-            Class<?> klass = Class.forName(uc);
-            //Class<?> klass = WekaExample001.class;
+            //Class<?> klass = Class.forName(uc);
+            Class<?> klass = WekaExample001.class;
             Object ins = klass.newInstance();
 
             //String outputPath = "/Users/dnes/github/mexproject/metafiles/framework/";
@@ -113,13 +118,18 @@ public class MetaGeneration {
                 ExperimentInfo aExpInfo = (ExperimentInfo) annotation;
                 LOG.info("@ExperimentInfo - OK");
 
-                mex.setExperimentId(aExpInfo.identifier());
-                mex.setExperimentTitle(aExpInfo.title());
-                mex.setExperimentDescription(aExpInfo.description());
-                mex.setAuthorEmail(aExpInfo.email());
-                mex.setAuthorName(aExpInfo.createdBy());
-                mex.setExperimentDate(new Date());
-                mex.setContext(aExpInfo.context());
+                MexController mex = new MexController();
+                JSONObject obj = new JSONObject();
+
+                obj.put("id",aExpInfo.identifier());
+                obj.put("title",aExpInfo.title());
+                obj.put("description",aExpInfo.description());
+                obj.put("email",aExpInfo.email());
+                obj.put("author",aExpInfo.createdBy());
+                //obj.put("date",new Date());
+                obj.put("context", aExpInfo.context());
+
+                mex.setExperimentInfo(obj.toJSONString());
 
                 //LOG.info("Priority: " + aExpInfo.priority().toString());
                 int tagLength = aExpInfo.tags().length;
@@ -276,7 +286,7 @@ public class MetaGeneration {
             }
 
             MEXSerializer.getInstance().parse(mex);
-            MEXSerializer.getInstance().saveToDisk(mexfile, "http://mex.aksw.org/examples/ESWC/001/", mex);
+            MEXSerializer.getInstance().saveToDisk("/Users/igorcosta/Downloads/experiment.ttl", "", mex);
             LOG.info("The MEX file has been successfully created: share it ;-)");
 
             END_TIME = System.currentTimeMillis();
